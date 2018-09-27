@@ -10,16 +10,31 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var mainImageView: UIImageView!
+    @IBOutlet weak var mainLabel: UILabel!
+    @IBOutlet weak var getStartedButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        getStartedButton.layer.cornerRadius = getStartedButton.frame.size.height/2
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func getStartedButtonPressed(_ sender: UIButton) {
+        let selectionVC = storyboard?.instantiateViewController(withIdentifier: "selectionViewController") as! selectionViewController
+        selectionVC.selectionDelegate = self
+        present(selectionVC, animated: true, completion: nil)
     }
-
-
 }
+
+extension ViewController: sideSelectionDelegate {
+    func sideSelected(image: UIImage, name: String) {
+        mainImageView.image = image
+        mainLabel.text = name
+    }
+}
+
+
+
+
+
 

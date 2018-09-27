@@ -12,6 +12,7 @@
 		B223DBD6215BE718005D0F8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B223DBD4215BE718005D0F8C /* Main.storyboard */; };
 		B223DBD8215BE718005D0F8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B223DBD7215BE718005D0F8C /* Assets.xcassets */; };
 		B223DBDB215BE718005D0F8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B223DBD9215BE718005D0F8C /* LaunchScreen.storyboard */; };
+		B223DBE3215D4C58005D0F8C /* selectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B223DBE2215D4C58005D0F8C /* selectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B223DBD7215BE718005D0F8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B223DBDA215BE718005D0F8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B223DBDC215BE718005D0F8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B223DBE2215D4C58005D0F8C /* selectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				B223DBD0215BE718005D0F8C /* AppDelegate.swift */,
 				B223DBD2215BE718005D0F8C /* ViewController.swift */,
+				B223DBE2215D4C58005D0F8C /* selectionViewController.swift */,
 				B223DBD4215BE718005D0F8C /* Main.storyboard */,
 				B223DBD7215BE718005D0F8C /* Assets.xcassets */,
 				B223DBD9215BE718005D0F8C /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B223DBD3215BE718005D0F8C /* ViewController.swift in Sources */,
+				B223DBE3215D4C58005D0F8C /* selectionViewController.swift in Sources */,
 				B223DBD1215BE718005D0F8C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
